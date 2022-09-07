@@ -29,10 +29,13 @@ function bmi_calc() {
   if (result <= 18) {
     document.getElementById("bmi_word").innerHTML = "UnderWeight";
   }
-  if (result >= 18 && result <= 25) {
+  if (result >= 18 && result < 25) {
     document.getElementById("bmi_word").innerHTML = "Normal";
   }
-  if (result >= 25 && result <= 30) {
+  if (result >= 25 && result < 30) {
     document.getElementById("bmi_word").innerHTML = "OverWeight";
+  }
+  if (result >= 30) {
+    document.getElementById("bmi_word").innerHTML = "Obese";
   }
 }
